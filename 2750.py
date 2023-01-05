@@ -1,6 +1,9 @@
 N = int(input())
 
-l = list(map(int, input().splitlines()))
+l = []
+for i in range(N):
+    a = int(input())
+    l.append(a)
 
 l.sort()
 
