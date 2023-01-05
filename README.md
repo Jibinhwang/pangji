@@ -78,7 +78,7 @@ for i in l:
 _input()대신 sys.stdin.readline()를 사용해야한다!!!_   
 놀랍게도 모든 입력 중 input()이 가장 느리다고 한다.  
 2751에서는 무려 1,000,000개 이하의 숫자를 입력받아야 하므로 for문을 돌면서 계속 input()으로만 받다보니 시간초과 문제가 발생하였다.  
-앞으로는 sys.stdin.readline()을 습관화하자!  
+##### 앞으로는 sys.stdin.readline()을 습관화하자!  
 **사용법은 <https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline>를 참고하였다.**  
 
 ```python
@@ -100,7 +100,7 @@ x.sort(reverse=True)
 print(x[k-1])   
 ```
 한 줄에 여러개의 변수를 입력받거나, 여러개의 숫자들을 for문을 이용하지 않고 입력받기 위해 map함수를 활용할 수 있다.  
-# <br>map함수
+### <br>map함수
 ```python
 map(적용시킬 함수, 리스트나 튜플 등)
 ```
