@@ -1,5 +1,4 @@
 # 산술평균, 중앙값, 최빈값, 범위
-
 import sys
 from collections import Counter
 

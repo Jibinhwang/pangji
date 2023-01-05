@@ -136,5 +136,41 @@ print(l[int(N/2)]) # 중앙값
 print(Most(l, N)) #최빈값
 print(l[N-1]-l[0]) #범위
 ```
-창소프 수업 때 배운 counter함수로 풀었다.  
-counter함수는 주로 문자열에서 문자의 개수를 셀 때 쓰이는데 이렇게 리스트 안의 숫자들로도 빈도를 체크할 수 있었다. 다른 풀이들도 찾아봐야할것 같다.
+창소프 수업 때 배운 **counter함수**로 풀었다.  
+counter함수는 주로 문자열에서 문자의 개수를 셀 때 쓰이는데 이렇게 리스트 안의 숫자들로도 빈도를 체크할 수 있었다. 다른 풀이들도 찾아봐야할것 같다.  
+
+---
+날짜 : 2022.01.05.  
+푼 문제 : 2563
+```python
+import sys
+import numpy as np
+
+N = int(sys.stdin.readline())
+A = np.zeros((100,100))
+
+for i in range(N):
+    a,b = map(int, sys.stdin.readline().split())
+    A[a-1:a+9, b-1:b+9] = 1
+
+print(int(A.sum()))
+```
+백준에서는 외부 라이브러리를 지원하지 않는 관계로 numpy를 사용하면 런타임에러가 난다고 한다ㅠㅠ 그래서 자꾸 에러가 났던 것임...
+```python
+import sys
+
+N = int(sys.stdin.readline())
+A = [[0 for i in range(100)] for j in range(100)]
+
+sum = 0
+for i in range(N):
+    a,b = map(int, sys.stdin.readline().split())
+    for j in range(a-1,a+9):
+        for k in range(b-1,b+9):
+            if A[j][k] == 0:
+                sum+=1
+                A[j][k] = 1
+                
+print(sum)
+```
+결국 삼중for문으로 일일이 1을 채워넣었지만 추후 다른 풀이도 찾아봐야할 것 같다
