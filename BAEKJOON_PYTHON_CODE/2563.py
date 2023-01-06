@@ -3,7 +3,6 @@ import sys
 N = int(sys.stdin.readline())
 A = [[0 for i in range(100)] for j in range(100)]
 
-print(type(A))
 sum = 0
 for i in range(N):
     a,b = map(int, sys.stdin.readline().split())
