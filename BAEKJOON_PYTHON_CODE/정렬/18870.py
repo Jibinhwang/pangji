@@ -12,3 +12,4 @@ for i in A:
 # 임의의 개수의 정수를 한줄에 입력받아 리스트에 저장하는 법
 # 이중for문 -> 시간초과
 # dict 정리
+# https://gudwns1243.tistory.com/52
