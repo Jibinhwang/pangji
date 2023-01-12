@@ -19,8 +19,8 @@ for i in range(N):
         idx = idx - 1 # 1개 줄어들었으므로 idx 1개 감소
         idx = idx + K
         
-print("<")
-print(*result, sep=",", end = "")
+print("<", end="")
+print(*result, sep=", ", end = "")
 print(">")
         
         
