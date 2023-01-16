@@ -18,4 +18,5 @@ def isPalindrome(s):
 for i in A:
     a, b = isPalindrome(i)
     print(a,b, sep=" ")
+    
 # .strip('\n') 주의
