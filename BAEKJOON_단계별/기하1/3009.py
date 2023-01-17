@@ -10,4 +10,4 @@ second = Counter([i[1] for i in a]).most_common()[-1]
 
 print(first[0], second[0])
 
-# 2차원 배열에서 열 추출
+# 2차원 배열에서 열 추출하는 법 [i[0] for i in a]
