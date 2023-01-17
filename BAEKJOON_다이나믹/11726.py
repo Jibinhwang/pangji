@@ -10,4 +10,4 @@ for i in range(1,N+1):
     else:
         A.append(A[i-2]+A[i-3])
 
-print(A[N])
+print(A[N-1]%10007)
