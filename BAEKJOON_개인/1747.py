@@ -16,6 +16,11 @@ def prime(M):
     else:
         return M
     
+if N == 1:
+    print(2)
+    sys.exit()
+#처음 문제 틀린 이유
+    
 while True:
     flag=0
     l=math.ceil(len(A)/2)
