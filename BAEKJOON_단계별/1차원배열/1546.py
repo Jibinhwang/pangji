@@ -10,4 +10,4 @@ for i in range(N):
     A[i] = A[i]/M*100
     sum += A[i]
     
-print(sum/3)
+print(sum/N)
