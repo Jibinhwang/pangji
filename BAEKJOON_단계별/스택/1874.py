@@ -26,7 +26,7 @@ for i in range(N):
                 pointer -= 1
             elif A[pointer-1]!=0 and pointer-1 != M:
                 flag=1
-                pointer-=1
+                pointer -= 1
             else:
                 pointer -= 1
                 P.append('-')
