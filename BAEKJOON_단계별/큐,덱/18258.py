@@ -26,7 +26,6 @@ for i in range(N):
     if 'pop' in a:
         if len(B) == pointer:
             print(-1)
-            print(pointer)
         else:
             print(B[pointer])
             pointer += 1
