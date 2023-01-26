@@ -1,3 +1,4 @@
+#시간초과
 import sys
 N = int(sys.stdin.readline())
 A = list(map(int, sys.stdin.readline().split()))
@@ -18,4 +19,3 @@ for i in range(N):
         R.append(-1)
         
 print(*R)
-    
