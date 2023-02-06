@@ -10,7 +10,6 @@ while True:
         break
     A.append(A[pointer])
     pointer += 1
-    print(A)
 
 print(A[2*N-2])
     
