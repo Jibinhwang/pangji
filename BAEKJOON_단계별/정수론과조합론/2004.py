@@ -1,3 +1,5 @@
+# 접근자체의 오류
+# 왜 0이 생기는지 생각해보자! 5의 배수!
 import sys
 
 a, b = map(int, sys.stdin.readline().split())

@@ -1,0 +1,32 @@
+# def two_five(N):
+#    a=N
+#    b=N
+#    while(a<2):
+       
+    
+       
+        
+#     return min(two, five)
+# print(two_five(10))
+
+import sys
+
+a, b = map(int, sys.stdin.readline().split())
+
+def two(N):
+    two2 = 0
+    t = 2
+    while N // t > 0:
+        two2 += (N // t)
+        t *= 2
+    return two2
+
+def five(N):
+    five5 = 0
+    f=5
+    while N // f > 0:
+        five5 += (N // f)
+        f *= 5
+    return five5
+
+print(min(two(a)-two(b)-two(a-b), five(a)-five(b)-five(a-b)))
